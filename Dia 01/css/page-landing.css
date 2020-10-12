@@ -1,0 +1,33 @@
+/*
+Design da page-landing e da box container
+*/
+
+.page-landing {
+    background: linear-gradient(329.54deg, rgb(70, 170, 228) 0%, rgb(71, 204, 209) 100%);
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.location, h2, .visit p {
+    height: 16vh;
+}
+
+.visit a {
+    width: 6rem;
+    height: 6rem;
+    background: #ffd666;
+    border: none;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: background 200ms;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
