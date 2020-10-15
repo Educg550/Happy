@@ -50,6 +50,10 @@ h1,
   height: 90%;
 }
 
+.footer {
+  position: absolute;
+}
+
 /*
 Design para desktops abaixo, pois até agora estávamos em Mobile (o min-width declarado nos parênteses indica que tudo dentro do @media só acontecerá se a tela tiver pelo menos 760px
 */
