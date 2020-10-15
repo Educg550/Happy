@@ -19,12 +19,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: clamp(2vw, 2.5vw, 3vw);
+  padding: clamp(2vw, 2.25vw, 2.5vw);
 }
 
 .aside h1 {
     margin-top: 6.4rem;
-    font: 800 3.6rem/1.1 'Nunito', sans-serif;
+    font: 800 4.25rem/1.1 'Nunito', sans-serif;
 }
 
 .aside p {
@@ -35,6 +35,8 @@ a.create-orphanage {
     position: absolute;
     right: 4rem;
     bottom: 4rem;
+
+    z-index: 2;
 
     width: 6.4rem;
     height: 6.4rem;
@@ -52,7 +54,56 @@ a.create-orphanage:hover {
     background: #17D6EB;
 }
 
+/*
+Ajustes no mapa interativo:
+*/
+
 #mapid {
     width: clamp(76rem, 80vw, 80vw);
+    
+    animation-delay: 200ms;
+}
 
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+.leaflet-popup-content {
+  color: #0089A5;
+  margin: .8rem 1.8rem;
+  font: 800 2rem/1 'Nunito', sans-serif;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leaflet-popup-content a {
+  width: 4rem;
+  height: 4rem;
+  background: #15C3D6;
+  /*
+  box-shadow: deslocamentoEixoX deslocamentoEixoY blur(esfumaçado) cor
+  */
+  box-shadow: 17.2828px 27.65px 41.48px rgba(23, 142, 166, 0.16);
+  border-radius: 12px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 200ms;
+}
+
+.leaflet-popup-content a:hover {
+  background: #17D6EB;
+}
+
+.leaflet-popup-tip {
+  display: none;
+}
+
+.leaflet-container {
+  z-index: 1;
 }

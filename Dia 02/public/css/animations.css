@@ -36,6 +36,15 @@ Animações com elementos da página abaixo (keyframes)
     }
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .right {
     animation-name: right;
     animation-duration: 400ms;
@@ -52,6 +61,17 @@ Animações com elementos da página abaixo (keyframes)
   animation-duration: 300ms;
   animation-fill-mode: backwards;
 }
+
+.appear {
+  animation-name: appear;
+  animation-duration: 300ms;
+  animation-fill-mode: backwards;
+
+}
+
+/*
+Propriedades das animações dos elementos HTML:
+*/
 
 .header {
   animation-delay: 50ms;
