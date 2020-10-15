@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy - Orfanatos</title>
+
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/page-orphanages.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+  </head>
+
+  <body>
+    <div class="page-orphanages">
+      <div class="container">
+        <aside class="aside right">
+          <header>
+            <img src="./public/images/map-marker.svg" alt="" />
+
+            <h1>Selecione um orfanato no mapa</h1>
+            <p>Muitas crianças aguardam pela sua visita!</p>
+          </header>
+
+          <footer>
+            <p><strong>SP</strong><br />São Paulo</p>
+            <br />
+            <p>Risum.org &copy; 2020 - Todos os direitos resevados</p>
+          </footer>
+        </aside>
+        <a
+          href="create-orphanage.html"
+          class="create-orphanage"
+          title="Adicionar orfanato"
+        >
+          <img src="./public/images/plus.svg" alt="Adicionar orfanato" />
+        </a>
+        <div id="mapid"></div>
+      </div>
+    </div>
+
+    <script src="./public/js/page-orphanages.js"></script>
+  </body>
+</html>

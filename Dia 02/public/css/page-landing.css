@@ -1,0 +1,115 @@
+/*
+Design da page-landing e da box container
+*/
+
+.page-landing {
+  background: linear-gradient(
+    1deg,
+    rgb(70, 170, 228) 0%,
+    rgb(71, 204, 209) 100%
+  );
+  min-height: 100vh;
+  text-align: justify;
+  display: flex;
+  align-items: left;
+}
+
+.location,
+h1,
+.visit p {
+  height: 16vh;
+}
+
+.visit {
+    margin-top: 5rem;
+}
+
+.content h1 {
+  /*
+    Função clamp() é muito útil para ajustar limite de tamanho de fontes dinâmicas
+    */
+  font-size: clamp(4rem, 8vw, 6rem);
+}
+
+.visit a {
+  width: 6rem;
+  height: 6rem;
+  background: #ffd666;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  transition: background 200ms;
+}
+
+.container {
+  width: min(90%, 1120px);
+  margin: auto;
+  height: 90%;
+}
+
+/*
+Design para desktops abaixo, pois até agora estávamos em Mobile (o min-width declarado nos parênteses indica que tudo dentro do @media só acontecerá se a tela tiver pelo menos 760px
+*/
+
+@media (min-width: 760px) {
+  #container {
+    /*
+        background shorthand: path repeat/no-repeat size
+        */
+    background: url("../images/bg.svg") no-repeat 80% /
+      clamp(30rem, 54vw, 56rem);
+    /*
+        background-position shorthand: eixoY eixoX
+        */
+    background-position: center right;
+  }
+
+  .location,
+  h1,
+  .visit p {
+    height: initial;
+  }
+
+  .visit p,
+  .location p {
+    font-size: clamp(2.5rem, 3vh, 4rem);
+    width: clamp(8vw, 27vw, 170vw);
+  }
+
+  .visit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .location {
+    text-align: right;
+  }
+
+  .content h1 {
+    font-size: clamp(6rem, 7vw, 9rem);
+    text-align: left;
+    line-height: 1;
+    width: min(80%, 300px);
+    margin-bottom: 2vh;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content,
+  .container {
+    width: clamp(80vw, 85vw, 90vw);
+    padding: 5rem 2rem;
+  }
+
+  .visit a {
+    margin: initial;
+  }
+}
