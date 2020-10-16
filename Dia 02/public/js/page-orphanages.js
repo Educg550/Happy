@@ -1,4 +1,4 @@
-const map = L.map("mapid").setView([-23.5513794, -46.6357827], 16);
+const map = L.map("mapid").setView([-23.5180237,-46.6226418], 16);
 
 // Criação do tileLayer:
 
@@ -24,11 +24,11 @@ const popup = L.popup({
   minWidth: 240,
   minHeight: 240,
 }).setContent(
-  "Orf. da Esperança <a href='orphanage.html?id=1' class='choose-orphanage'><img src='./public/images/arrow-white.svg'></a>"
+  "Orf. Raio de Luz <a href='orphanage.html?id=1' class='choose-orphanage'><img src='./public/images/arrow-white.svg'></a>"
 );
 
 // Criação do Marcador:
 
-L.marker([-23.5513794, -46.6357827], { icon })
+L.marker([-23.5180237,-46.6226418], { icon })
   .addTo(map)
   .bindPopup(popup);

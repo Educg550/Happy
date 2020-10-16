@@ -1,0 +1,39 @@
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 9.6rem;
+    padding: 3.2rem, 2.4rem;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.sidebar a {
+    margin: 3rem;
+}
+
+  .sidebar footer button {
+    width: 4.8rem;
+    height: 4.8rem;
+    border: none;
+    border-radius: 2rem;
+    background: #12AFCB;
+    cursor: pointer;
+    margin: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 200ms;
+}
+
+.sidebar footer button:hover {
+    background: #17D6EB;
+}
+
+.with-sidebar {
+  padding-left: 11rem;
+}

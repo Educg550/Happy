@@ -21,7 +21,7 @@ h1,
 }
 
 .visit {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .content h1 {
@@ -61,14 +61,14 @@ Design para desktops abaixo, pois até agora estávamos em Mobile (o min-width d
 @media (min-width: 760px) {
   #container {
     /*
-        background shorthand: path repeat/no-repeat size
+        background shorthand: url(path) repeat/no-repeat size
         */
-    background: url("../images/bg.svg") no-repeat 80% /
+    background: url("../images/bg.svg") no-repeat 50% /
       clamp(30rem, 54vw, 56rem);
     /*
         background-position shorthand: eixoY eixoX
         */
-    background-position: center right;
+    background-position: right center;
   }
 
   .location,
@@ -110,7 +110,7 @@ Design para desktops abaixo, pois até agora estávamos em Mobile (o min-width d
   .content,
   .container {
     width: clamp(80vw, 85vw, 90vw);
-    padding: 5rem 2rem;
+    padding: 5rem;
   }
 
   .visit a {

@@ -6,7 +6,7 @@ const options = {
     zoomControl: false
 }
 
-const map = L.map("mapid", options).setView([-23.5513794, -46.6357827], 15);
+const map = L.map("mapid", options).setView([-23.5180237,-46.6226418], 15);
 
 // Criação do tileLayer:
 
@@ -26,7 +26,7 @@ const icon = L.icon({
 
 // Criação do Marcador:
 
-L.marker([-23.5513794, -46.6357827], { icon })
+L.marker([-23.5180237,-46.6226418], { icon })
   .addTo(map)
 
 // Galeria de imagens:

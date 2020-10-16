@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy - Orfanato da Esperança</title>
+    <title>Happy | Orfanato Raio de Luz</title>
 
     <link rel="stylesheet" href="./public/css/main.css" />
     <link rel="stylesheet" href="./public/css/page-orphanage.css" />
+    <link rel="stylesheet" href="./public/css/sidebar.css" />
     <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/map.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -30,14 +32,14 @@
   <body>
     <div class="page-orphanage">
       <div class="container">
-        <aside class="aside">
-            <a href="index.html" title="Página inicial">
-              <img src="./public/images/map-marker.svg" alt="Logomarca" />
-            </a>
+        <aside class="sidebar right">
+          <a href="index.html" title="Página inicial">
+            <img src="./public/images/map-marker.svg" alt="Logomarca" />
+          </a>
 
           <footer>
             <button onclick="history.back()">
-              <img src="./public/images/arrow-back.svg" alt="Voltar">
+              <img src="./public/images/arrow-back.svg" alt="Voltar" />
             </button>
           </footer>
         </aside>
@@ -91,7 +93,7 @@
             </div>
 
             <div class="orphanage-details-content">
-              <h1>Orf. da Esperança</h1>
+              <h1>Orf. Raio de Luz</h1>
               <p>
                 Presta assistência a crianças de 6 a 15 anos que se encontre em
                 situação de risco e/ou vulnerabilidade social.
@@ -101,11 +103,13 @@
                 <div id="mapid"></div>
 
                 <footer>
-                  <a href="https://maps.google.com" target="_blank">Ver rotas no Google Maps</a>
+                  <a href="https://maps.google.com" target="_blank"
+                    >Ver rotas no Google Maps</a
+                  >
                 </footer>
               </div>
 
-              <hr>
+              <hr />
 
               <h2>Instruções para visita</h2>
               <p>
@@ -128,7 +132,7 @@
               </div>
 
               <button class="primary-button" type="button" title="Chamar">
-                <img src="./public/images/whatsapp.svg" alt="Whatsapp">
+                <img src="./public/images/whatsapp.svg" alt="Whatsapp" />
                 Entrar em contato
               </button>
             </div>
