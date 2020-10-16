@@ -60,7 +60,6 @@ Ajustes no mapa interativo:
 
 #mapid {
     width: clamp(76rem, 80vw, 80vw);
-    
     animation-delay: 200ms;
 }
 
