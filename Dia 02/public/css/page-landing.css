@@ -11,7 +11,7 @@ Design da page-landing e da box container
   min-height: 100vh;
   text-align: justify;
   display: flex;
-  align-items: left;
+  justify-content: center;
 }
 
 .location,
@@ -46,7 +46,7 @@ h1,
 
 .container {
   width: min(90%, 1120px);
-  margin: auto;
+  margin: 7rem;
   height: 90%;
 }
 
@@ -63,12 +63,12 @@ Design para desktops abaixo, pois até agora estávamos em Mobile (o min-width d
     /*
         background shorthand: url(path) repeat/no-repeat size
         */
-    background: url("../images/bg.svg") no-repeat 50% /
+    background: url("../images/bg.svg") no-repeat 80% /
       clamp(30rem, 54vw, 56rem);
     /*
         background-position shorthand: eixoY eixoX
         */
-    background-position: right center;
+        background-position: center right;
   }
 
   .location,
@@ -110,7 +110,6 @@ Design para desktops abaixo, pois até agora estávamos em Mobile (o min-width d
   .content,
   .container {
     width: clamp(80vw, 85vw, 90vw);
-    padding: 5rem;
   }
 
   .visit a {
