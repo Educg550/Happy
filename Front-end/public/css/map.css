@@ -10,6 +10,7 @@
 .map-container footer {
   text-align: center;
   padding: 2rem 0;
+  font: 700 1.4rem/2.5rem 'Nunito', sans-serif;
 }
 
 .map-container footer a {

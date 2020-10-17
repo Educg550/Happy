@@ -1,0 +1,33 @@
+.page-create-orphanage {
+  display: flex;
+  min-height: 100vw;
+  background: #cedee5;
+}
+
+.container {
+  display: flex;
+
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#main {
+  flex: 1;
+}
+
+#map-container {
+  margin: 0 0 4rem 0;
+}
+
+.map-container .leaflet-container {
+  border-radius: 2rem 2rem 0 0;
+}
+
+.map-container footer {
+  background: #f5f8fa;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.new-upload + .new-upload {
+  margin-top: 1.2rem;
+}

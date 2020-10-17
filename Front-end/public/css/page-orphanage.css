@@ -26,7 +26,7 @@ main {
 }
 
 .orphanage-details-content {
-  padding: 8rem;
+  padding: 0 8rem 8rem 8rem;
 }
 
 /*
@@ -56,7 +56,7 @@ O seguinte seletor '>' resgata apenas a primeira imagem dentro da classe orphana
     O conteúdo que exceder o tamanho da caixa será completamente ignorado (escondido), o que permite que a borda arredondada seja visível:
     */
   overflow: hidden;
-
+  
   opacity: 0.5;
   transition: opacity 200ms;
 }
@@ -130,32 +130,4 @@ images button.active {
 
 .open-on-weekends p {
   color: #37c77f;
-}
-
-.primary-button {
-  margin-top: 6.4rem;
-
-  width: 100%;
-  height: 6.4rem;
-  border: none;
-  border-radius: 2rem;
-
-  cursor: pointer;
-
-  background: #3cdc8c;
-  color: white;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  transition: background 200ms;
-}
-
-.primary-button:hover {
-  background: #36cf82;
-}
-
-.primary-button img {
-  margin-right: 1.5rem;
 }

@@ -32,6 +32,7 @@ button,
 textarea {
   /*Shorthand abaixo indica o weight, size, line-height, font-family e font-family secundária do texto*/
   font: 400 1.7rem/1.5 "Nunito", sans-serif;
+  outline: none;
 }
 
 .footer p {
