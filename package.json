@@ -1,0 +1,25 @@
+{
+  "name": "Next_Level_Week_3",
+  "version": "1.0.0",
+  "description": "Projeto da Rocketseat da semana #3: Happy - aplicação que facilita a conexão entre orfanatos e pessoas que gostariam de visitar as crianças carentes",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Educg550/Next_Level_Week_3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Educg550/Next_Level_Week_3/issues"
+  },
+  "homepage": "https://github.com/Educg550/Next_Level_Week_3#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.6"
+  }
+}
