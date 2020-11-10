@@ -82,6 +82,7 @@ Ajustes no mapa interativo:
 .leaflet-popup-content a {
   width: 4rem;
   height: 4rem;
+  margin-left: 1rem;
   background: #15C3D6;
   /*
   box-shadow: deslocamentoEixoX deslocamentoEixoY blur(esfumaçado) cor
