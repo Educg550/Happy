@@ -102,14 +102,14 @@ images button.active {
   margin: 6rem 0;
 }
 
-.open-information-visit {
+.opening-hours {
   margin-top: 2.8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
 }
 
-.open-information-visit div {
+.opening-hours div {
   width: 26.4rem;
   height: 17.6rem;
   background: linear-gradient(149.97deg, #e6f7fb 8.13%, #ffffff 92.67%);
@@ -118,7 +118,7 @@ images button.active {
   padding: 2rem;
 }
 
-.open-information-visit div p {
+.opening-hours div p {
   font-size: 1.8rem;
   line-height: 1rem;
   font-weight: 600;
