@@ -9,6 +9,7 @@ Projeto da Rocketseat da semana #3: Happy - aplicação que facilita a conexão 
 * 🍃 Leaflet JS - Framework de aplicação de mapas interativos com JavaScript e OpenStreet Map
 * 💽 sqlite3 - Database utilizada para o projeto
 * 🥦 NodeJS - Para execução e manutenção do Back-End
+* 🌑 Nodemon - Framework do Node para execução do servidor
 
 ## Next Level Week 3
 
