@@ -1,4 +1,8 @@
-const map = L.map("mapid").setView([-23.5180237, -46.6226418], 16);
+// Importação dos dados de latitude e longitude do HBS
+const spanLat = document.querySelector('span[data-lat]')
+const spanLng = document.querySelector('span[data-lng]')
+
+const map = L.map("mapid").setView([spanLat.dataset.lat, spanLng.dataset.lng], 16);
 
 // Criação do tileLayer:
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

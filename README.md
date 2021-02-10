@@ -5,7 +5,7 @@ Projeto da Rocketseat da semana #3: Happy - aplicação que facilita a conexão 
 
 ## Tecnologias Utilizadas
 
-* 👺 HandlebarsJS - Modernização dos tradicionais formatos HTML
+* 👺 HandlebarsJS - Template Engine para os tradicionais formatos HTML
 * 🍃 Leaflet JS - Framework de aplicação de mapas interativos com JavaScript e OpenStreet Map
 * 💽 sqlite3 - Database utilizada para o projeto
 * 🥦 NodeJS - Para execução e manutenção do Back-End

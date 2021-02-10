@@ -16,6 +16,8 @@
   text-align: center;
   justify-content: center;
   transition: background 200ms;
+
+  text-decoration: none;
 }
 
 .primary-button:hover {

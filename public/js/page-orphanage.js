@@ -5,8 +5,11 @@ const options = {
     scrollWheelZoom: false,
     zoomControl: false
 }
+// Importação dos dados de latitude e longitude do HBS
+const spanLat = document.querySelector('span[data-lat]')
+const spanLng = document.querySelector('span[data-lng]')
 
-const map = L.map("mapid", options).setView([-23.5180237,-46.6226418], 15);
+const map = L.map("mapid", options).setView([spanLat.dataset.lat, spanLng.dataset.lng], 15);
 
 // Criação do tileLayer:
 
@@ -26,7 +29,7 @@ const icon = L.icon({
 
 // Criação do Marcador:
 
-L.marker([-23.5180237,-46.6226418], { icon })
+L.marker([spanLat.dataset.lat,spanLng.dataset.lng], { icon })
   .addTo(map)
 
 // Galeria de imagens:
