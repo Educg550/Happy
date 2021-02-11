@@ -42,8 +42,8 @@ map.on("click", (event) => {
 
 // Adicionar campo das fotos
 const addPhotoField = () => {
-  // Resgatar o container de fotos #photos
-  const container = document.querySelector("div#photos");
+  // Resgatar o container de fotos #images
+  const container = document.querySelector("div#images");
 
   // Resgatar o container da imagem que será duplicado #new-upload
   const fieldsContainer = document.querySelectorAll(".new-upload");
@@ -63,7 +63,7 @@ const addPhotoField = () => {
   // Limpeza do campo antes de adicioná-lo no container
   newFieldContainer.children[0].value = "";
 
-  // Adicionar o clone ao container de imagens #photos no HTML
+  // Adicionar o clone ao container de imagens #images no HTML
   container.appendChild(newFieldContainer);
 };
 
@@ -77,7 +77,7 @@ const removePhotoField = (event) => {
 
   if (fieldsContainer.length == 1) {
     // Limpar o valor do campo
-    span.parentNode.children[0].value = ''
+    span.parentNode.children[0].value = "";
     return;
   }
 
@@ -87,27 +87,35 @@ const removePhotoField = (event) => {
 
 const selectButtonActive = (event) => {
   // Resgatar os dois botões sim e não
-  const buttons = document.querySelectorAll('.button-select button')
+  const buttons = document.querySelectorAll(".button-select button");
 
   // Remover a classe active dos dois botões
-  buttons.forEach( (button) => button.classList.remove('active') )
+  buttons.forEach((button) => button.classList.remove("active"));
 
   // Colocar a classe active no botão clicado
-  const button = event.currentTarget
-  button.classList.add('active')
+  const button = event.currentTarget;
+  button.classList.add("active");
 
   // Resgatar o input hidden dos botões
-  const input = document.querySelector('input#open-on-weekends')
+  const input = document.querySelector("input#open-on-weekends");
 
   // Verificar se o botão é sim ou não
-  if (button.value == '1')
-  {
-    input.value = button.value
-  }
-  else if (button.value == '0')
-  {
-    input.value = button.value
+  if (button.value == "1") {
+    input.value = button.value;
+  } else if (button.value == "0") {
+    input.value = button.value;
   }
 
-  console.log(input.value)
+  console.log(input.value);
+};
+
+function validate(event) {
+  // Validar se lat e lng estão preenchidos
+  const vfcLat = document.querySelector("input#lat");
+  const vfcLng = document.querySelector("input#lng");
+
+  if (vfcLat.value == "" || vfcLng.value == "") {
+    event.preventDefault();
+    alert('Selecione um ponto no mapa!')
+  }
 }

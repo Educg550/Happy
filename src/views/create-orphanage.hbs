@@ -48,14 +48,14 @@
         </aside>
 
         <main class="appear with-sidebar" id="main">
-          <form action="POST">
+          <form action="save-orphanage" method="POST" onsubmit="validate(event)">
             <fieldset>
               <legend>Dados</legend>
 
               <div class="map-container" id="map-container">
                 <div id="mapid"></div>
-                <input type="hidden" name="lat" />
-                <input type="hidden" name="lng" />
+                <input type="hidden" name="lat" id="lat" />
+                <input type="hidden" name="lng" id="lng" />
                 <footer>
                   <a href=""> Clique no mapa para adicionar a localização </a>
                 </footer>
@@ -92,13 +92,14 @@
               </div>
 
               <div class="input-block">
-                <div class="photos-upload" id="photos">
-                  <label for="photos">Fotos</label>
+                <div class="images-upload" id="images">
+                  <label for="images">Fotos</label>
                   <div class="new-upload">
                     <input
-                      name="photos"
+                      name="images"
                       placeholder="Cole o link da foto aqui"
                       required
+                      type="url"
                     />
                     <span onclick="removePhotoField(event)"
                       ><img src="/images/remove-file.svg" alt=""
@@ -107,7 +108,7 @@
                 </div>
                 <button
                   type="button"
-                  class="add-photos"
+                  class="add-images"
                   onclick="addPhotoField()"
                 >
                   <img
@@ -133,11 +134,11 @@
               </div>
 
               <div class="input-block">
-                <label for="visit-horary">Horário das visitas</label>
+                <label for="opening_hours">Horário das visitas</label>
                 <input
                   type="text"
-                  name="visit-horary"
-                  id="visit-horary"
+                  name="opening_hours"
+                  id="opening_hours"
                   required
                 />
               </div>
