@@ -13,12 +13,14 @@ Projeto da Rocketseat da semana #3: Happy - aplicação que facilita a conexão 
 * 🌑 Nodemon - Framework do Node para execução do servidor
 
 ## Como Executar
-Primeiramente, é necessário ter o [Git](https://git-scm.com/downloads) e o [Node.js](https://nodejs.org/en/download/) instalados no seu sistema. Assim que esse pré-requisito for atendido, basta executar estes comandos, um a um, no seu Terminal ou Shell de preferência:
+Primeiramente, é necessário ter o [Git](https://git-scm.com/downloads) e o [Node.js](https://nodejs.org/en/download/) instalados no seu sistema. Assim que esses pré-requisitos forem atendidos, basta executar estes comandos, um a um, no seu Terminal ou Shell de preferência:
 
 ```
 git clone https://github.com/Educg550/Next_Level_Week_3.git
 
 cd Next_Level_Week_3
+
+npm
 
 npm start
 ```
