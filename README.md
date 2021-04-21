@@ -1,6 +1,6 @@
 ![Imagem PC](https://raw.githubusercontent.com/guilhermecapitao/nlw3-discovery-happy/master/.github/happy.png)
 <br />
-![Logo Happy](https://user-images.githubusercontent.com/42190754/95762044-8bc31880-0c83-11eb-9fa1-29d644b4799f.png "Happy")
+![Logo Happy](public/images/logo-full.png "Happy")
  
 <h3 align="center">
   Happy | Visite e leve felicidade a diversos lares e orfanatos
