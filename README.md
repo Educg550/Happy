@@ -1,4 +1,6 @@
-![Imagem PC](https://raw.githubusercontent.com/guilhermecapitao/nlw3-discovery-happy/master/.github/happy.png)
+<h3 align="center">
+<img src="public/images/pc-happy.png">
+</h3>
 <br />
 
 <h3 align="center">
