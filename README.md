@@ -2,7 +2,7 @@
 <br />
 
 <h3 align="center">
-![Logo Happy](public/images/logo-full.png "Happy")
+<img src="public/images/logo-full.png" />
  </h3>
 <h3 align="center">
   Happy | Visite e leve felicidade a diversos lares e orfanatos
