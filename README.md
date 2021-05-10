@@ -5,9 +5,11 @@
 
 <h3 align="center">
 <img src="public/images/logo-full.png" />
+      <hr />
+
  </h3>
 <h3 align="center">
-  Happy | Visite e leve felicidade a diversos lares e orfanatos
+  😄 Happy | Visite e leve felicidade a diversos lares e orfanatos 💛
 </h3>
 
 O layout oficial do Happy pode ser acessado na plataforma **Figma** através [deste link](https://www.figma.com/file/D3j86gLfnDhc3GAIY4MI6z/Happy?node-id=0%3A1)
